@@ -1,0 +1,122 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    } #textbox {
+        width: 824px;
+        height: 928px;
+        margin: 0 auto;
+        background: white;
+        box-shadow: 2px 3px 6px gainsboro;
+        border: 6px solid darkolivegreen;
+		border-radius: 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding: 16px;
+	} .top-image {
+    	width: 100%;
+    	text-align: center;
+	} .top-image img {
+    	max-width: 100%;
+    	height: 450px;
+		width: 550px;
+    	border: 5px solid darkolivegreen;
+    	box-shadow: 2px 3px 6px gray;
+    	border-radius: 10px;
+	} h1 {
+        font: 38pt/1.4em Pangolin;
+        text-align: center;
+        margin: 24px 0;
+		color: olivedrab;
+	} figure {
+        margin: 24px;
+    } img, .zoom {
+        width: 200px;
+        height: 200px;
+        border: 5px solid darkolivegreen;
+        box-shadow: 2px 3px 6px gray;
+        transition: transform 0.5s;
+		border-radius: 10px;
+    } figcaption {
+        font: 12pt/1.4em Pangolin;
+        margin-top: 3px;
+		color: olivedrab;
+		text-align: center;
+    } img:hover {
+        transform: scale(1.03);
+        transition: transform 0.5s;
+    } .zoom:hover {
+        background-size: 105%;
+        transition: background-size 0.5s;
+	} body {
+		background-image: url("greenlinesbg.jpg");
+		background-repeat: repeat;
+	} .section-heading {
+    font: 14pt/1.4em Pangolin;
+    text-align: center;
+    color: darkolivegreen;
+	width: 350px;
+    height: 100px;
+    border: 4px double darkolivegreen;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 35px auto;
+    background: white;
+} .figure-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+</style>
+</head>
+
+<body>
+    <h1>WELCOME TO MY PORTFOLIO</h1>
+    <div id="textbox">
+        <div class="top-image">
+			<a href="PeterPan.jpeg"> </a>
+            <img src="PeterPan.jpeg"/>
+			<figcaption>
+			Peter Pan + Tinkbell Fanart
+			</figcaption>
+        </div>
+		<h2 class="section-heading">
+			ORIGINAL CHARACTERS (OC) ART
+		</h2>
+		<div class="figure-container">
+        <figure>
+			<a href="E30.jpeg"> </a>
+            <img src= "thumb-e30.jpg"/>
+            <figcaption>
+            Vintage OC + BMW E30
+            </figcaption>
+        </figure>
+  
+		<figure>
+			<a href="Vampire.jpeg"> </a>
+            <img src= "thumb-vampire.jpg"/>
+            <figcaption>
+            Vampire OC - B/W
+            </figcaption>
+        </figure>  
+		<figure>
+			<a href="Hufflepuff.jpeg"> </a>
+            <img src= "thumb-hufflepuff.jpg"/>
+            <figcaption>
+            Hufflepuff OC + Patronus
+            </figcaption>
+        </figure>  
+	</div>
+</body>
+</html>
