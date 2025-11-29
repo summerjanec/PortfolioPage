@@ -86,12 +86,48 @@
     gap: 20px;
     flex-wrap: wrap;
     margin-top: 20px;
-}
+} #menu-button {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        background: maroon;
+        padding: 10px 16px;
+        border-radius: 6px;
+        cursor: pointer;
+        font-family: 'Nova Square';
+        color: white;
+        font-size: 14px;
+        z-index: 999;
+    } #menu {
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: #254f38;
+        padding: 10px 20px;
+        border-radius: 6px;
+        display: none;
+        z-index: 999;
+    } #menu a {
+        display: block;
+        margin: 8px 0;
+        color: white;
+        text-decoration: none;
+        font-family: 'Nova Square';
+        font-size: 14px;
+    }
 </style>
 </head>
 
 <body>
-    <h1>WELCOME TO MY PORTFOLIO</h1>
+     <div id="page">
+        <div id="menu-button">☰ Menu</div>
+        <div id="menu">
+            <a href="#">Home</a>
+            <a href="#">About Me</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+        </div>
+	<h1>WELCOME TO MY PORTFOLIO</h1>
     <div id="textbox">
         <div class="top-image">
 			<a href="PeterPan.jpeg">
@@ -131,5 +167,13 @@
             </figcaption>
         </figure>  
 	</div>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu-button").click(function() {
+                $("#menu").slideToggle();
+            });
+        });
+    </script>
 </body>
 </html>
